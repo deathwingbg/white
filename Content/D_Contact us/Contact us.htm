@@ -1,0 +1,418 @@
+﻿
+
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+
+			<title>myPOS Developers</title>
+			<meta name="description" content="" />
+
+			<!-- Include head -->
+			<meta charset="utf-8">
+				<meta http-equiv="X-UA-Compatible" content="IE=edge">
+					<meta name="viewport" content="width=device-width, initial-scale=1">
+
+						<link rel="icon" href="https://developers.mypos.eu/img/favicon.ico">
+
+							<!-- Schema.org markup for Google+ -->
+
+
+							<link rel="alternate" hreflang="en" href="https://developers.mypos.eu/en/contacts" />
+
+							<link rel="alternate" hreflang="x-default" href="https://developers.mypos.eu/en/contacts" />
+
+
+							<!-- Bootstrap Core CSS -->
+							<link rel="stylesheet" href="https://developers.mypos.eu/js/owl-carousel/owl.carousel.css" type="text/css">
+								<link rel="stylesheet" href="https://developers.mypos.eu/js/owl-carousel/owl.theme.css" type="text/css">
+									<link href="https://developers.mypos.eu/css/bootstrap.min.css" rel="stylesheet">
+
+
+										<!-- Custom CSS -->
+										<link href="https://developers.mypos.eu/css/style_info.css" rel="stylesheet">
+											<link href="https://developers.mypos.eu/css/common_styles.css" rel="stylesheet">
+												<link href="https://developers.mypos.eu/css/pagination.css" rel="stylesheet">
+
+													<!-- media-query Core CSS -->
+													<link href="https://developers.mypos.eu/css/media-query.css" rel="stylesheet">
+
+														<!-- Custom Fonts -->
+														<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+
+															<!-- jQuery -->
+															<script type="text/javascript" src="https://developers.mypos.eu/js/owl-carousel/jquery-1.9.1.min.js"></script>
+															<script type="text/javascript" src="https://developers.mypos.eu/js/owl-carousel/owl.carousel.js"></script>
+
+															<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+															<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+															<!--[if lt IE 9]>
+															<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+															<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+															<![endif]-->
+															<script type="text/javascript" src="https://developers.mypos.eu/js/plugins/highlight/highlight.pack.js"></script>
+															<link href="https://developers.mypos.eu/js/plugins/highlight/styles/monokai.css" rel="stylesheet" />
+
+															<base href="https://developers.mypos.eu/" />
+
+
+
+
+
+
+
+															</head>
+															<body>
+															<!-- START HEADER -->
+															<header class="header">
+															<nav class="navbar navbar-default nav-dev">
+															<div class="container">
+															<div class="navbar-header">
+															<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+															<span class="icon-bar"></span>
+															<span class="icon-bar"></span>
+															<span class="icon-bar"></span>
+															</button>
+
+															<a class="logo pull-left" href="https://developers.mypos.eu/en/" title="myPOS">
+															<img src="https://developers.mypos.eu/img/logos/logo_myPOS.png" alt="myPOS"/>
+															<span class="tagline">/ Developers</span>
+															</a>
+															</div>
+
+															<div class="collapse navbar-collapse" id="myNavbar">
+															<ul class="nav navbar-nav navbar-right">
+															<li>
+															<a href="https://developers.mypos.eu/en/contacts" class="btn btn-link link-contact">Contact us</a>
+															</li>
+															<!--<li>
+															<a href="javascript:;" class="btn btn-primary btn-login">Login</a>
+															</li>-->
+															</ul>
+															</div>
+															</div>
+															</nav>
+															</header><!-- /.header -->
+															<div class="wrapper wrap-content">
+															<div class="container">
+															<div class="row mt_60">
+															<!-- side menu
+															<div class="col-md-4 mb_20 sidebar">
+						
+															<div class="search mb_15">
+															<form action="?" method="get">
+															<input type="search" name="q" id="q" value="" placeholder="Search..." class="search-field">
+
+															<button type="submit" class="search-btn">
+															<i class="ico-search mt_5"></i>
+															</button>
+															</form>
+															</div>
+
+															<nav class="sidebar-nav">
+															<ul>
+															</li>
+															</ul>
+															</nav>
+															</div> -->
+
+															<div class="col-md-8 col-md-offset-2">
+															<article class="article article-teritary floating-content floating-corection">
+
+															<div class="article-head">
+															<h1 class="fz_36">Contact us</h1>
+
+															<hr>
+															</div><!-- /.article-head -->
+
+															<div class="article-body">
+															<div class="form-contacts">
+															<div class="alert jsErrorBox alert-danger" role="alert" style="display: none;" id="comp_error">
+														<a href="javascript:;" class="close" onclick="$(this).parents('.jsErrorBox').hide();">×</a>
+	
+	
+	<div id="err_text" class="jsErrorText">
+			</div>
+</div>
+
+
+
+
+
+
+
+	<script type="text/javascript">
+
+		$(function () {
+			if (typeof errorFields != undefined && errorFields) {
+				colorFormFields_m(errorFields);
+			}
+		});
+		function colorFormFields_m(errorFields) {
+			var cont = $('body ' + errorFormScope);
+			if (!cont) {
+				return false;
+			}
+
+			if (errorFields && (errorFields != '')) {
+				var len = errorFields.length;
+				for (i = 0; i <= len; i++) {
+					cont.find('[name="' + errorFields[i] + '"]').addClass('alerted');
+				}
+			}
+		}
+	</script>
+
+
+<script type="text/javascript">
+	var errorFormScope = '';
+	var errorFields = [];
+	
+    </script>
+
+
+
+									
+
+
+
+									<form method="post" id="sendContactForm">
+										
+										<div class="row">
+											<div class="col-xs-12 col-sm-6">
+										    	<div class="form-group">
+													<label class="form-label">Subject <span class="red">*</span></label>
+													<select class="selectpicker form-control" name="subject">
+                                                        <option value="">Please, choose...</option>
+														<option value="1">Integration assistance</option>
+<option value="2">Bug report</option>
+<option value="3">Other</option>
+
+													</select>
+										    	</div>
+										  	</div><!-- /.col-xs-12 -->
+										</div><!-- /.row -->
+									
+										<div class="row">
+											<div class="col-xs-12 form-group">
+												<label for="field-message" class="form-label">How can we help you? <span class="red">*</span></label>
+												<textarea class="textarea form-control" name="message" id="field-message"></textarea>
+											</div><!-- /.col-xs-12 -->
+										</div><!-- /.row -->
+										
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="checkbox">
+												    <label for="checkbox_already_mypos_user" class="form-label">
+												    	<input id="checkbox_already_mypos_user" name="is_mypos_user" type="checkbox" >
+														Already myPOS user
+													</label>
+												</div>
+											</div>
+										</div>
+										
+										<div id="not_mypos_user" >
+											<div class="row">
+												<div class="col-sm-6 form-group">
+													<label for="fname" class="form-label">First Name <span class="red">*</span></label>
+													<input type="text" class="field form-control" name="fname" id="fname" value="">
+												</div><!-- /.col-sm-6 -->
+												
+												<div class="col-sm-6 form-group">
+													<label for="lname" class="form-label">Last Name <span class="red">*</span></label>
+													<input type="text" class="field form-control" name="lname" id="lname" value="">
+												</div><!-- /.col-sm-6 -->
+												
+											</div><!-- /.row -->
+											
+											<div class="row">
+												<div class="col-sm-6 form-group">
+													<label for="phone_number" class="form-label">Phone number <span class="red">*</span></label>
+													<input type="text" class="field form-control" name="phone_number" id="phone_number" value="">
+												</div><!-- /.col-sm-6 -->
+												
+												<div class="col-sm-6 form-group">
+													<label for="company_name" class="form-label">Company name <span class="red">*</span></label>
+													<input type="text" class="field form-control" name="company_name" id="company_name" value="">
+												</div><!-- /.col-sm-6 -->
+												
+											</div><!-- /.row -->
+											
+											<div class="row">
+												<div class="col-sm-6 form-group">
+													<label for="" class="form-label">You are a <span class="red">*</span></label>
+													
+													<select class="selectpicker form-control" name="user_is">
+										    		    <option value="">Please, choose...</option>
+														<option value="1">Company representative</option>
+<option value="2">Developer</option>
+<option value="3">Sole trader</option>
+<option value="4">Other</option>
+
+										      		</select>
+												</div><!-- /.col-sm-6 -->
+												
+												<div class="col-sm-6 form-group">
+													<label for="not_mypos_user_email" class="form-label">Your email address <span class="red">*</span></label>
+													<input type="text" class="field form-control" name="not_mypos_user_email" id="not_mypos_user_email" value="">
+												</div><!-- /.col-sm-6 -->
+												
+											</div><!-- /.row -->
+
+										</div>
+										
+										<div id="already_mypos_user" style="display:none;">
+											<div class="row">
+												<div class="col-sm-6 form-group">
+                                                    <label class="form-label">Email address (same as you use to sign in to your account) <span class="red">*</span></label>
+                                                    <input type="text" class="field form-control" name="mypos_user_email" value="">
+												</div><!-- /.col-sm-6 -->
+											</div>
+										</div>
+										
+                                        <div class="row">
+                                            <div class="col-sm-4 col-xs-6">
+                                                <label>Enter code <span class="red">*</span></label>
+                                                <input name="captcha" class="form-control" type="text"/>
+                                            </div>
+                                            <div class="col-sm-3 col-xs-6 pl_2">
+                                                <div class="">
+                                                    <label> </label>
+                                                    <img src="https://developers.mypos.eu/en/getCaptcha" class="img-responsive text-right">
+                                                </div>
+                                            </div>
+                                        </div>
+
+										<hr>
+
+										<input type="hidden" value="eba2efe315349e07cc01530c8bd9d0a3ca73d400" name="csrf[contacts]" />
+										<div class="row">
+											<div class="col-xs-6">
+												<p>
+													<span class="red">*</span> Required fields
+												</p>
+											</div>
+											
+											<div class="col-xs-6 text-right">
+												<input type="submit" value="Send" class="btn btn-primary min_wi_100">
+											</div><!-- /.col-xs-12 -->
+										</div><!-- /.row -->
+									</form>
+								</div><!-- /.form-contacts -->
+							</div>
+						</article><!-- /.article -->
+
+					</div>
+                </div> 
+
+                <br>
+			</div><!-- /CONTAINER -->
+		</div><!-- /.wrapper -->
+
+		<!-- START FOOTER -->
+		<footer>
+<div class="container">
+    
+    <div class="footer">
+        
+        
+        <a href="https://developers.mypos.eu/en/contacts" class="footer-links">Contact us</a>
+    </div>
+    </div>
+    
+</footer>
+<a href="#home" title="Scroll to top" class="pull-right scroll-top display_sm_none"></a>
+
+<!-- Custom JavaScript-->
+<script src="https://developers.mypos.eu/js/script.js"></script>
+<script src="https://developers.mypos.eu/js/scripts.js"></script>
+<!-- jQuery -->
+<script src="https://developers.mypos.eu/js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="https://developers.mypos.eu/js/bootstrap.min.js"></script>
+	
+		<script>
+			(function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+						m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-85160269-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+
+
+
+		<script type="text/javascript">
+			(function ($, window, document, undefined) {
+				var $win = $(window);
+				var $doc = $(document);
+
+				$doc.ready(function () {
+					// SLIDER
+					$('.sidebar-nav .btn-expand').on('click', function (event) {
+						if ($(this).attr('href') == '#') {
+							$(this).parent('li').toggleClass('expand');
+
+							event.preventDefault();
+						}
+					});
+
+					// TAB FUNCTIONALITY
+					(function () {
+						var activeTabClass = 'current';
+
+						$('.tabs-nav a').on('click', function (event) {
+							var $tabLink = $(this);
+							var $targetTab = $($tabLink.attr('href'));
+
+							$tabLink
+									.parent()
+									.add($targetTab)
+									.addClass(activeTabClass)
+									.siblings()
+									.removeClass(activeTabClass);
+
+							event.preventDefault();
+						});
+					})();
+
+					hljs.initHighlightingOnLoad();
+				});
+			})(jQuery, window, document);
+		</script>
+
+		<script>
+		
+			// Already myPOS user checkbox function
+			// There is a bug if you click twice faster the ckeckbox.
+			$(document).ready(function(){
+			    $('#checkbox_already_mypos_user').change(function(){
+			        if(this.checked) {
+                        $('#not_mypos_user').hide();
+                        $('#already_mypos_user').show();
+                    } else {
+                        $('#already_mypos_user').hide();
+                        $('#not_mypos_user').show();
+                    }
+			    });
+			});
+			
+			
+			// Make tables in article-body responsive
+			$(".article-body table").wrap(function() {
+				return "<div class='table-responsive'></div>";
+			});
+
+			// Make images in article-body responsive
+			$(".article-body img").addClass('img-responsive');
+		</script>
+	</body>
+</html>
